@@ -12,7 +12,7 @@ db_conn = psycopg2.connect(
     dbname=os.environ['PGDATABASE'],
     user=os.environ['PGUSER'],        # Ganti sesuai user DB kamu
     password=os.environ['PGPASSWORD'],     # Ganti sesuai password DB kamu
-    port=os.environt['PGPORT']
+    port=os.environ['PGPORT']
 )
 
 @app.route('/')
