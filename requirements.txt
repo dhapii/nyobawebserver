@@ -1,2 +1,2 @@
-aS:FHNodn:HfSDoHDSFjkhasdopnasdkmimjsadnskondasoijfjsodkflask
+flask
 psycopg2-binary
