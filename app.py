@@ -7,11 +7,11 @@ app.secret_key = 'rahasia'  # Ganti sesuai kebutuhan
 
 # Konfigurasi database PostgreSQL
 db_conn = psycopg2.connect(
-    host="localhost",
-    dbname="login_db",
-    user="flaskuser",        # Ganti sesuai user DB kamu
-    password="flask123",     # Ganti sesuai password DB kamu
-    port="5432"
+    host=os.environ['PGHOST'],
+    dbname=os.environ['PGDATABASE'],
+    user=os.environ['PGUSER'],        # Ganti sesuai user DB kamu
+    password=os.environ['PGPASSWORD'],     # Ganti sesuai password DB kamu
+    port=os.environt['PGPORT']
 )
 
 @app.route('/')
