@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, session
 import psycopg2
 import hashlib
+import os
 
 app = Flask(__name__)
 app.secret_key = 'rahasia'  # Ganti sesuai kebutuhan
